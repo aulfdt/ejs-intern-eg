@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Withdraw</title>
+    <!-- Include head partial -->
     <%- include("../../partials/head.ejs") %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-      <!--Navbar-->
-      <%- include("../../partials/header.ejs") %>
-      <!--End Navbar-->
+        <!-- Navbar -->
+        <%- include("../../partials/header.ejs") %>
+        <!-- End Navbar -->
 
-      <!--Banner-->
+        <!-- Banner -->
         <div class="w-100 bg-warning py-3 mb-5">
             <div class="text-center text-light">
-                <span> Cek Turnitin 24 Jam </span>
+                <span>Cek Turnitin 24 Jam</span>
             </div>
         </div>
-    <!--End Banner-->
+        <!-- End Banner -->
     </header>
     <!-- End Header -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="container mt-4 py-3">
+            <div class="row justify-content-center mt-5">
+                <!-- Sidebar -->
+                <%- include("../../partials/sidebar.ejs") %>
+                <!-- End Sidebar -->
+
+                <!--Withdraw Content-->
+                <div class="col-xl-8 col-12">
+                    <div class="mx-auto mt-md-1">
+                        <div class="shadow p-3 mb-1 mt-1 bg-body-light rounded">
+                            <div class="d-flex">
+                                <div class="p-2 flex-fill">
+                                    <span class="fs-5 fw-bold">Withdraw Saldo</span>
+                                </div>
+                                <div class="p-2 flex-fill">
+                                    <span class="fs-8"> Jumlah Saldo :</span>
+                                    <br>
+                                    <span class="fs-8 fw-bold ms-5">Rp 0</span>
+                                </div>
+                                <div class="p-2 flex-fill text-end">
+                                    <span class="fs-8"> Jumlah saldo yang bisa ditarik :</span>
+                                    <br>
+                                    <span class="fs-8 fw-bold ms-5">Rp 0</span>
+                                </div>
+                              </div>
+
+                            <!--Withdraw Form-->
+                            <div class="row justify-content-between align-items-start">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <label for="name" class="form-label">Jumlah Penarikan</label>
+                                      <input type="name" class="form-control" id="inputName" placeholder="Contoh: 125000">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputNumber" class="form-label">Metode Penarikan</label>
+                                      <input type="name" class="form-control" id="inputNumber" placeholder="Contoh : BNI">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Nomor Akun / Rekening</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Contoh : 123......">
+                                    </div>
+                                    <!--End Withdraw Form-->
+                                    <div class="col-12 mt-3 text-start">
+                                        <button type="submit" class="btn btn-withdraw">Ajukan Tarik Dana</button>
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Withdraw Content-->
+            </div>
+        </div>
+    </main>
+    <!-- End Main Content -->
+
+   
+</body>
+</html>

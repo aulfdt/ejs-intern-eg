@@ -1,21 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Project User</title>
+    <!-- Include head partial -->
     <%- include("../../partials/head.ejs") %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-      <!--Navbar-->
-      <%- include("../../partials/header.ejs") %>
-      <!--End Navbar-->
+        <!-- Navbar -->
+        <%- include("../../partials/header.ejs") %>
+        <!-- End Navbar -->
 
-      <!--Banner-->
+        <!-- Banner -->
         <div class="w-100 bg-warning py-3 mb-5">
             <div class="text-center text-light">
-                <span> Cek Turnitin 24 Jam </span>
+                <span>Cek Turnitin 24 Jam</span>
             </div>
         </div>
-    <!--End Banner-->
+        <!-- End Banner -->
     </header>
     <!-- End Header -->
+
+    <!-- Main Content -->
+    <main>
+        <div class="container mt-1 py-1">
+            <div class="row justify-content-center mt-5">
+                <!-- Sidebar -->
+                <%- include("../../partials/sidebar.ejs") %>
+                <!-- End Sidebar -->
+
+                <!--Affiliate Content-->
+                <div class="col-xl-8 col-12">
+                    <ul class="nav nav-underline px-3">
+                        <li class="nav-item">
+                          <a class="nav-link fw-bold text-dark" href="#">Project saya</a>
+                        </li>
+                      </ul>
+                    <div class="mx-auto mt-md-1">
+                        <div class="shadow p-3 mb-1 mt-1 bg-body-light rounded">
+                            <div class="row justify-content-between align-items-start">
+                                <div class="col-12">
+                                    <div class="align-items-left">
+                                        <h5 class="fw-semi">Project</h5>
+                                    </div>
+                                    <div class="search-container">
+                                        <form class="d-flex flex-grow-1 me-2" role="search">
+                                            <input class="form-control me-2 search-bar" type="search" placeholder="Cari Proyek" aria-label="Search">
+                                        </form>
+                                        <div class="col-6 col-xl-1">
+                                          <select class="form-select select-bar" aria-label="Default select example">
+                                              <option selected>Urutkan</option>
+                                              <option value="desc">Terbaru</option>
+                                              <option value="asc">Terlama</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-6 col-xl-2">
+                                          <button type="button" class="btn btn-warning w-15 text-light">Buat Projek</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pagination-container">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="d-flex text-center justify-content-center">
+                                    <img src="https://turnedin.id/img/illustration/empty.svg" class="img-project">
+                                </div>
+                                <div class="text-center fs-5">
+                                    <p>Tidak ada projek</p>
+                                </div>
+                                <div class="pagination-container">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Main Content -->
+
+    
+
+    <!-- Include JavaScript files -->
+    <%- include("../../partials/script.ejs") %>
+</body>
+</html>

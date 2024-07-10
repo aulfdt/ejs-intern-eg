@@ -4,6 +4,7 @@
     <title>Profile User - Turned In</title>
     <%- include("../../partials/head.ejs") %>
     <link rel="stylesheet" href="/path/to/your/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
 </head>
 <body>
     <!-- Header -->
@@ -24,61 +25,16 @@
 
     <!-- Main Section -->
     <main>
-        <div class="container mt-4 py-3">
+        <div class="container mt-1 py-1">
             <div class="row justify-content-center mt-5">
                 <!-- Sidebar -->
-                <div class="col-3">
-                    <div class="card shadow border-0 mb-2 bg-light rounded">
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">Profil</a>
-                                <p>Detail tentang informasi Profil Saya</p>
-                            </div>
-                        </nav>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="ri-lg ri-user-fill"></div>
-                        </div>
-                    </div>
-                    <div class="card shadow border-0 mb-2 bg-light rounded">
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">Affiliate</a>
-                                <p>Detail tentang informasi affiliate</p>
-                            </div>
-                        </nav>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="ri-lg ri-user-fill"></div>
-                        </div>
-                    </div>
-                    <div class="card shadow border-0 mb-2 bg-light rounded">
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">Withdraw</a>
-                                <p>Detail tentang informasi withdraw</p>
-                            </div>
-                        </nav>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="ri-lg ri-user-fill"></div>
-                        </div>
-                    </div>
-                    <div class="card shadow border-0 mb-2 bg-light rounded">
-                        <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <a class="navbar-brand" href="#">My Project</a>
-                                <p>Detail tentang informasi Projek Saya</p>
-                            </div>
-                        </nav>
-                        <div class="d-flex align-items-center gap-1">
-                            <div class="ri-lg ri-user-fill"></div>
-                        </div>
-                    </div>
-                </div>
+                <%- include("../../partials/sidebar.ejs") %>
                 <!-- End Sidebar -->
 
                 <!-- Main Content -->
-                <!-- Photo Profile-->
-                <div class="col-8">
-                    <div class="mx-auto mt-md-1">
+                <div class="col-xl-8 col-12">
+                    <!-- Photo Profile-->
+                    <div class="mx-auto card-body">
                         <div class="shadow p-3 mb-1 mt-1 bg-body-light rounded">
                             <div class="row justify-content-between align-items-start">
                                 <div class="col-12">
@@ -86,13 +42,15 @@
                                         <div class="d-flex align-items-center">
                                             <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-10" />
                                             <div class="profile-info ms-3">
-                                                <h5 class="mb-0">Aulia Firdatunnisa</h5>
+                                                <h5 class="mb-0">Aulia F</h5>
                                                 <button type="button" class="btn btn-yellow btn-sm text-light mt-2">Ganti Foto</button>
                                             </div>
                                         </div>
-                                        <div class="text-end">
-                                            <button type="button" class="btn btn-warning text-light">Upload KYC</button>
-                                            <div class="mt-2">*Upload KYC terlebih dahulu sebelum membuat tawaran</div>
+                                        <div class="col-8 mt-2 mt-lg-0 d-none d-md-block pe-0">
+                                            <div class="text-end">
+                                                <button type="button" class="btn btn-warning text-light">Upload KYC</button>
+                                                <div class="mt-2">*Upload KYC terlebih dahulu sebelum membuat tawaran</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -112,7 +70,7 @@
                                     </div>
                                     <div class="col-md-6">
                                       <label for="inputNumber" class="form-label">Nomor HP</label>
-                                      <input type="number" class="form-control" id="inputNumber" placeholder="Masukkan Nomor HP Anda">
+                                      <input type="name" class="form-control" id="inputNumber" placeholder="Masukkan Nomor HP Anda">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">Email</label>
@@ -145,9 +103,9 @@
                     </div>
                     <!--End Profile Info-->
                 </div>
-                <!-- End Main Content -->
             </div>
         </div>
     </main>
+    <!-- End Main Content -->
 </body>
 </html>
