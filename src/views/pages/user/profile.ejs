@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile User - Turned In</title>
+    <%- include("../../partials/head.ejs") %>
+    <link rel="stylesheet" href="/path/to/your/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <%- include("../../partials/header.ejs") %>
+        <!-- End Navbar -->
+
+        <!-- Banner -->
+        <div class="w-100 bg-warning py-3 mb-5">
+            <div class="text-center text-light">
+                <span>Cek Turnitin 24 Jam</span>
+            </div>
+        </div>
+        <!-- End Banner -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Main Section -->
+    <main>
+        <div class="container mt-4 py-3">
+            <div class="row justify-content-center mt-5">
+                <!-- Sidebar -->
+                <div class="col-3">
+                    <div class="card shadow border-0 mb-2 bg-light rounded">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Profil</a>
+                                <p>Detail tentang informasi Profil Saya</p>
+                            </div>
+                        </nav>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="ri-lg ri-user-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-0 mb-2 bg-light rounded">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Affiliate</a>
+                                <p>Detail tentang informasi affiliate</p>
+                            </div>
+                        </nav>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="ri-lg ri-user-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-0 mb-2 bg-light rounded">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">Withdraw</a>
+                                <p>Detail tentang informasi withdraw</p>
+                            </div>
+                        </nav>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="ri-lg ri-user-fill"></div>
+                        </div>
+                    </div>
+                    <div class="card shadow border-0 mb-2 bg-light rounded">
+                        <nav class="navbar bg-body-tertiary">
+                            <div class="container-fluid">
+                                <a class="navbar-brand" href="#">My Project</a>
+                                <p>Detail tentang informasi Projek Saya</p>
+                            </div>
+                        </nav>
+                        <div class="d-flex align-items-center gap-1">
+                            <div class="ri-lg ri-user-fill"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sidebar -->
+
+                <!-- Main Content -->
+                <!-- Photo Profile-->
+                <div class="col-8">
+                    <div class="mx-auto mt-md-1">
+                        <div class="shadow p-3 mb-1 mt-1 bg-body-light rounded">
+                            <div class="row justify-content-between align-items-start">
+                                <div class="col-12">
+                                    <div class="profile-header d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="https://turnedin.id/images/default.jpeg" class="img-thumbnail rounded-circle w-10" />
+                                            <div class="profile-info ms-3">
+                                                <h5 class="mb-0">Aulia Firdatunnisa</h5>
+                                                <button type="button" class="btn btn-yellow btn-sm text-light mt-2">Ganti Foto</button>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <button type="button" class="btn btn-warning text-light">Upload KYC</button>
+                                            <div class="mt-2">*Upload KYC terlebih dahulu sebelum membuat tawaran</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Profile Info-->
+                    <div class="mx-auto mt-md-3">
+                        <div class="shadow p-3 mb-4 mt-4 bg-body-light rounded">
+                            <span class="fw-bold mb-5">Ubah Informasi</span>
+                            <div class="row justify-content-between align-items-start">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                      <label for="name" class="form-label">Nama</label>
+                                      <input type="name" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputNumber" class="form-label">Nomor HP</label>
+                                      <input type="number" class="form-control" id="inputNumber" placeholder="Masukkan Nomor HP Anda">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="Masukkan Email Anda">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Masukkan Password Baru">
+                                      </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress2" class="form-label">Keahlian</label>
+                                      <input type="text" class="form-control" id="inputAddress2" placeholder="Masukkan Keahlian Anda">
+                                    </div>
+                                    <div>
+                                    <div class="col-12">
+                                      <label class="form-label">Portofolio</label>
+                                      <div class="mt-0">
+                                        <button type="button" class="btn btn-yellow text-light">Tambah Portofolio</button>
+                                    </div>
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div class="col-12 mt-3 text-center">
+                                        <button type="submit" class="btn btn-profile">Perbarui</button>
+                                    </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Profile Info-->
+                </div>
+                <!-- End Main Content -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

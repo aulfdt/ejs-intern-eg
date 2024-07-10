@@ -318,3 +318,48 @@
   }
 }
 
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-header img {
+  width: 80px; /* Atur sesuai kebutuhan */
+  height: 80px; /* Atur sesuai kebutuhan */
+  margin-right: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-info h5 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.ms-3 {
+  margin-left: 1rem;
+}
+
+.ms-auto {
+  margin-left: auto;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.btn-profile {
+  background-color: #1c2a63;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  padding: 10px 380px;
+  font-size: 16px;
+}
+.btn-profile:hover {
+  background-color: #163157;
+}

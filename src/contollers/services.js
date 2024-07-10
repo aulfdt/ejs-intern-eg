@@ -1,15 +1,15 @@
 export const cekTurnitin = (req, res) => {
-    res.render("pages/home/cek-tunitin.ejs")
+    res.render("pages/cek-turnitin/cek-tunitin.ejs")
 };
 
 export  const parafraseIn = (req, res) => {
-    res.render("pages/home/parafrase-in.ejs")
+    res.render("pages/parafrase-in/parafrase-in.ejs")
 };
 
 export const translateIn = (req, res) => {
-    res.render("pages/home/translate-in.ejs")
+    res.render("pages/translate-in/translate-in.ejs")
 };
 export const sarangFreelance = (req, res) => {
-    res.render("pages/home/sarang-freelance.ejs")
+    res.render("pages/sarang-freelance/sarang-freelance.ejs")
 };
 
