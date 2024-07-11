@@ -29,8 +29,15 @@
   margin-top: 100px;
 }
 
-.bg-primary{
+.bg-primary-footer{
   background-color: #252e64 !important;
+}
+.bg-primary-about{
+  background-color: #252e64 !important;
+}
+
+.bg-primary-blue{
+  background-color: #007bff;
 }
 
 .bg-secondary{
@@ -357,19 +364,38 @@
   border: none;
   color: white;
   border-radius: 40px;
-  padding: 10px 380px;
+  padding: 10px 20%;
   font-size: 16px;
+  max-width: 100%;
+  width: auto;
 }
+
 .btn-profile:hover {
   background-color: #163157;
 }
+
+/* Media query untuk layar yang lebih kecil */
+@media (max-width: 768px) {
+  .btn-profile {
+    padding: 10px 15%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-profile {
+    padding: 10px 10%;
+    font-size: 12px;
+  }
+}
+
 
 .btn-affiliate {
   background-color: #1c2a63;
   border: none;
   color: white;
   border-radius: 40px;
-  padding: 10px 100px;
+  padding: 5px 100px;
   font-size: 16px;
 }
 
@@ -385,4 +411,9 @@
 .img-project {
   width: 30%;
   height: 30%;
+}
+
+.copy-icon {
+  font-size: 24px; /* Ukuran ikon */
+  margin-left: 5px; /* Jarak antara ikon dan teks */
 }

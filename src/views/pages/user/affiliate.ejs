@@ -9,17 +9,7 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Navbar -->
         <%- include("../../partials/header.ejs") %>
-        <!-- End Navbar -->
-
-        <!-- Banner -->
-        <div class="w-100 bg-warning py-3 mb-5">
-            <div class="text-center text-light">
-                <span>Cek Turnitin 24 Jam</span>
-            </div>
-        </div>
-        <!-- End Banner -->
     </header>
     <!-- End Header -->
 
@@ -40,8 +30,10 @@
                                     <div class="align-items-left">
                                         <h5 class="fw-semi"> Data Affiliate Kamu</h5>
                                         <div class="text-center">
-                                            <div class="col-12 mt-3 text-center">
-                                                <button type="submit" class="btn btn-affiliate">Berbagung Menjadi Affiliate</button>
+                                            <P class="fs-5"> Affiliate </P>
+                                            <div class=" justify-content-center d-flex">
+                                                <p class="text-dark fs-4 fw-bold">https://turnedin.id/home?r=BRM107202460</p>
+                                                <i class="ri-file-copy-fill copy-icon"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -49,12 +41,35 @@
                             </div>
                         </div>
                     </div>
+                    <!--Affiliate Report Cek Turnitin-->
+                <div class="container">
+                    <div class="mt-5">
+                        <p>Transaksi Cek Turnitin</p>
+                    </div>
+                    <%- include("../../partials/affiliate-report.ejs") %>
                 </div>
+                <!--END Affiliate Report Cek Turnitin-->
+                
+                <!--Affiliate Report Parafrasein-->
+                <div class="container">
+                    <div class="mt-5">
+                        <p>List Parafrase</p>
+                    </div>
+                    <%- include("../../partials/affiliate-report.ejs") %>
+                </div>
+                <!--END Affiliate Report Parafrasein-->
+
+                </div>
+                <!--End Affiliate Content-->
             </div>
+            
         </div>
-    <!-- End Main Content -->
     </main>
     <!-- End Main Content -->
+    
+    <!--  Include script.ejs -->
+    <%- include("../../partials/script.ejs") %>
+    <!-- End Include script.ejs-->
 
 
 
